@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/background-image.jpg);
+    font-weight: bolder;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mask1 {
+    mask-image: url("./images/beer_glass.svg");
+    -webkit-mask-image: url("./images/beer_glass.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.navbar-toggler{
+    background-color: #5e2508;
+    opacity: 0.7;
+}
+
+.text-justified{
+    text-align: justify;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+.navbar-brand{
+    color: #daab61;
+}
+
+.navbar-toggler-icon{
+    font-size: 2rem;
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.navbar-brand:hover{
+    color: rgba(255, 255, 255);
+}
+
+
+.navbar .nav-link:hover{
+    background-image:linear-gradient(to right, #daab61 , #a87d3a) ;
+    color:#fff;
+    text-decoration: underline;
+    border-radius: 28px;
+    transition: 0.5s;
+}
+
+.nav-link{
+    color: #daab61;
+}
+
+ul li:hover{
+    border-radius: 28px;
+    transition: 0.5s;
+}
+
+.bg-footer{
+    background: #2B3A55;
+}
+
+.nav .nav-link:hover{
+    background-color:#853c11 ;
+    color:#fff;
+    border-radius: 28px;
+    transition: 0.5s;
+}
+
+@media screen  and (max-width:768px){
+    .navbar .nav-link:hover{
+        border-radius: 0;
+    }
+}
