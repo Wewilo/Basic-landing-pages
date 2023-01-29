@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.container{
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.904),70%,#dd5b4452), no-repeat bottom 20% right 80% url("./images/hero.webp");
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.mt-1{
+    margin-top: 0.6rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #FFF;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mb-1{
+    margin-bottom: 0.6rem;
+}
+
+.ms-1{
+    margin-left: 0.6rem;
+}
+
+.me-1{
+    margin-right: 0.6rem;
+}
+
+.pt-1{
+    padding-top: 0.6rem;
+}
+
+.pb-1{
+    padding-bottom: 0.6rem;
+}
+
+.ps-1{
+    padding-left: 0.6rem;
+}
+
+.pe-1{
+    padding-right: 0.6rem;
+}
+
+.fs-bg{
+    font-size: 1.5rem;
+}
+
+.fs-xl{
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.btn{
+    padding: 1rem 1rem;
+    border-radius: 28px;
+    display: inline-block;
+    background-color:#DD5A44 ;
+    color: #fff;
+}
+
+.btn:hover{
+    transition: 0.5s;
+    opacity: 0.9;
+    color:#DD5A44 ;
+    background-color:#fff ;
+}
+
+#close{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.logo{
+    width: 10rem;
+}
+
+ul li, ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+ul li a:hover{
+    transition: 1s;
+    opacity: 0.8;
+    color:#DD5A44 ;
+    
+}
+
+.header{
+    color: #FFF;
+    line-height: 2;
+    padding: 1rem;
+    max-width: 50%;
+    margin: 4rem 3rem;
+}
+
+.container-2{
+    margin: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.content-img img{
+    border-radius: 12px;
+}
+
+.content{
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.content a{
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem;
+    border-radius: 28px;
+    display: inline-block;
+    background: linear-gradient(to right, #722f2352,20%,#e45e4652);
+}
+
+.content a:hover{
+    opacity: 0.9;
+}
+
+.burger-container{
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    gap: 1rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.burger-info{
+    max-width: 50%;
+    margin:0 3rem;
+}
+
+.burger-container h3{
+    font-size:4rem;
+    margin-bottom: 4rem;
+}
+
+.burger-container p{
+    font-size: 1.3rem;
+}
+
+.burger-img{
+    margin: 0 1rem;
+}
+
+.burger-img img{
+    border-radius: 28px;
+}
+
+#about-us{
+    text-align: center;
+    line-height: 2;
+    margin: 7rem auto;
+    max-width: 1150px;
+    font-size: 1.3rem;
+}
+
+#footer{
+    margin-top: 7rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1200px){
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .container{
+        background-position: 40% 80%;
+    }
+
+    .header{
+        margin: 5rem;
+        padding: 1rem;
+    }
+
+    .container-2{
+        flex-direction: column;
+        margin: 0rem;
+    }
+
+    .burger-container{
+        flex-direction: column;
+    }
+
+    .burger-img{
+        margin: 0;
+    }
+
+    .burger-info{
+        margin:0 0.8rem
+    }
+
+    .burger-container:nth-child(3) .burger-info{
+        order: 1;
+    }
+
+    .burger-container .burger-img:last-child{
+        order: -1;
+    }
+
+
+    .burger-info{
+        max-width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:668px){
+
+    .nav ul , .nav .contact-us{
+        display: none;
+    }
+    
+    .container{
+        background-position: bottom 30% right 50%;
+    }
+
+    .header{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .nav ul{
+        padding: 1.5rem 0;
+    }
+
+    .burger-info h3{
+        font-size: 2rem;
+    }
+
+    .container-2 .content{
+        margin: 0 0.8rem;
+    }
+
+
+    #about-us{
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+   
+    
+}
+
+@media screen and (max-width:668px){
+    .nav{
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+
+    .nav.responsive ul li{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    #close{
+        display: block;
+        width: 100%;
+        height: 3rem;
+        border: 1px solid gray;
+        background-color: #DD5A44;
+        color: #FFF;
+    }
+
+    .contact-us{
+        margin-bottom: 2rem;
+    }
+
+    
+    .nav.responsive ul,.nav.responsive .contact-us{
+        display: block;
+    }
+
+
+    
+}
