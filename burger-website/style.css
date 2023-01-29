@@ -10,6 +10,7 @@ body,html{
     background-color: black;
 }
 
+
 .container{
     min-height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.904),70%,#dd5b4452), no-repeat bottom 20% right 80% url("./images/hero.webp");
@@ -145,7 +146,12 @@ ul li a:hover{
 .content{
     font-size: 1.4rem;
     line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
 
 .content a{
     margin-top: 4rem;
