@@ -1,0 +1,19 @@
+{
+  "name": "nelolandscaping",
+  "version": "1.0.0",
+  "description": "website service for nelo landscaping design business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "landscaping",
+    "landscape",
+    "design"
+  ],
+  "author": "Abdulkadir Civioglu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

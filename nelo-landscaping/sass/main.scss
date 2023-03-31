@@ -1,0 +1,275 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+
+$custom-theme-colors: (
+    "green" : #5CBC45,
+    "white" : #FFF,
+    "red" :  #F13232
+);
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+.navbar-brand{
+    margin-right: 0 !important;
+}
+
+
+.img-opt{
+    height: 70vh !important;
+    object-fit: cover !important;
+}
+
+
+.state-hover:hover{
+    animation-name: hoverState;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+    animation-direction: alternate;
+}
+
+
+.state-hover{
+    transition: all 1s;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+
+
+
+
+.banner-image{
+    background: linear-gradient(rgba(39, 52, 169, 0.1), rgba(195, 55, 100, 0.1)), url(img/banner-image-five.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio img{
+    height: 500px !important;
+    width: 100%;
+}
+
+
+
+.services-link:after{
+    content: " ";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 43%;
+    width: 15%;
+    background-color: gray;
+    opacity: 0.5;
+    height: 5px;
+    transition: all 0.5s;
+}
+
+.services-link{
+    transition: all 0.5s !important;
+}
+
+
+.services-link:hover{
+    color:#5CBC45 !important;
+    transform: scale(1.2) !important;
+}
+
+
+.services-link:hover::after{
+    left: 37%;
+    opacity: 1;
+    width: 26%;
+    
+}
+
+.overlay::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.525);
+}
+
+.dropdown-toggle::after{
+    content: " " !important;
+    display: none !important;
+
+}
+
+
+.overlay li a{
+    transition: all 0.5s;
+}
+
+
+.overlay li a:hover{
+    color: #FFF !important;
+    border-radius: 18px;
+
+    border: 5px solid #FFF;
+    -webkit-box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+-moz-box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+}
+
+#why-choose-us .card-style{
+    -webkit-box-shadow: 9px 10px 20px 5px rgba(163,160,163,0.84);
+    -moz-box-shadow: 9px 10px 20px 5px rgba(163,160,163,0.84);
+    box-shadow: 9px 10px 20px 5px rgba(163,160,163,0.84) !important;
+}
+
+
+
+.check-out-testimonials{
+    background-image: url("/assets/check-out-testimonials.svg");
+    background-size: cover;
+    background-position: center;
+    max-width: 300px;
+    height: 300px;
+}
+
+#contact-us{
+    position: relative;
+}
+
+#contact-us::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+  background: linear-gradient(to right, rgba(93, 188, 69, 0.6) , rgba(12, 45, 4, 0.9)),url("../assets/services4.webp");
+  
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+}
+
+//testimonial
+
+#testimonials {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(93, 188, 69, 0.6);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background: linear-gradient(to left, rgba(93, 188, 69, 0.7) , rgba(12, 45, 4, 0.9));
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
+}
+
+#team .card{
+    -webkit-box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+    -moz-box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+    box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+
+}
+
+.footer.social-links ul li a{
+    border-radius: 29px;
+    transition: all 0.5s;
+}
+
+.footer.social-links ul li a:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 14px 7px 3px #000000;
+    background-color: #000000 !important;
+    border: none !important;
+    opacity: 0.8;
+}
+
+
+
+
+@keyframes hoverState {
+    0%   {transform: scale(1);}
+    25%  {transform: scale(1.2);}
+    50%  {transform: scale(1);}
+    100% {transform: scale(1.2);}
+  }
+
+
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+@media screen and (max-width:992px) {
+    .img-opt{
+        height: 50vh !important;
+        object-fit: cover !important;
+    }
+    .img-card{
+        min-height: 50vh !important;
+    }
+    video{
+        min-height: 20vh !important;
+    }
+}
+  
+
+@media screen and (max-width:768px) {
+    #portfolio div{
+        border: none !important;
+    }
+    #mobile-opt{
+        height: 50vh;
+    }
+    #hero{
+        height: 40vh;
+        object-fit: cover;
+    }
+    
+
+}
+
+
+$navbar-dark-color: #FFF;
+$btn-border-radius : 24px;
+$card-border-width: 0px;
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

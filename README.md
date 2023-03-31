@@ -1,14 +1,13 @@
 # Basic-landing-pages
+
 Some of basic HTML CSS landing pages
 
 Mora Law Agency : https://moralaw.netlify.app/
 
 Burger Shop : https://noahburger.netlify.app/
 
-Medimoyai Medical Website https://medimoyai.netlify.app/
+Medimoyai Medical Website : https://medimoyai.netlify.app/
 
-Yarn Factory Website : https://wewiyarn.netlify.app/
+Personal Trainer Website : https://sellyfitness.netlify.app/index.html
 
-Online Beer Shop : https://wewibeer.netlify.app/
-
-
+Landscape Services Website : https://nelolandscaping.netlify.app/

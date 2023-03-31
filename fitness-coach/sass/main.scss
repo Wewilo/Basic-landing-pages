@@ -1,0 +1,118 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+
+$custom-theme-colors: (
+    "dark-blue" : rgb(20,39,78),
+    "dark-blue-v2" : rgb(2,38,70),
+    "dark-gray":#2b3036,
+    "turquoise" : rgb(64,224,208),
+    "white" : #FFF,
+    "red" :  #F13232
+);
+
+ul li a{
+    background-color: #F13232 ;
+    border-radius:24px;
+    margin-right: 0.5rem;
+    padding: 0.5rem 2rem !important;
+}
+
+video{
+    display: block;
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.ov-container::after{
+    display: block;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-indicators {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+
+.transition{
+    transition: all 0.5s ease-in-out;
+}
+
+
+#testimonial-overflow::after{
+    display: block;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.969);
+}
+
+.testimonial-img{
+    width: 10rem;
+}
+
+.footer-icon{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:568px) {
+    #cta-border-reset{
+        border-radius: 0px !important;
+    }   
+}
+
+@media screen and (min-width:992px) {
+    ul li a{
+        color: #FFF !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    ul li a{
+        border-radius: 0px;
+        background:transparent;
+        margin:0px;
+    }
+}
+
+$navbar-dark-color: #FFF;
+$btn-border-radius : 24px;
+$card-border-width: 0px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

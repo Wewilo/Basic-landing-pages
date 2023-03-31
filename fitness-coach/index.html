@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <script src="https://kit.fontawesome.com/9fe4e6ed79.js" crossorigin="anonymous"></script>
+
+        <title>Selly Fitness</title>
+        <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    </head>
+    <body>
+            <div class="position-relative overflow-hidden">
+                <header class="navbar navbar-expand-lg fixed-top navbar-dark fw-bold transition" id="navbar">
+                    <div class="container-fluid g-0 m-0">
+                        <a class="navbar-brand" href="index.html"
+                            ><img src="./imgs/logo.svg" height="150" width="250" alt="logo" id="logo"
+                        /></a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="d-flex min-vh-100 position-relative ov-container" lc-helper="video-bg">
+                    <video
+                        
+                        autoplay=""
+                        preload=""
+                        muted=""
+                        loop=""
+                        playsinline=""
+                    >
+                        <!-- adjust object-position to tweak cropping on mobile -->
+                        <source src="./imgs/video.mp4" type="video/mp4" />
+                    </video>
+                    <div style="z-index: 2" class="align-self-end align-self-lg-center text-center text-light col-md-8 offset-md-2 mobile-align-self-end">
+                        <div class="my-5">
+                            <div >
+                                <h1 class="display-2 fw-bolder">Selly Fitness Your Partner in Health and Fitness</h1>
+                            </div>
+                        </div>
+
+                        <div class="mb-5" >
+                            <div >
+                                <p class="lead fs-4 fw-bold">
+                                    Achieve Your Fitness Goals with Expert Guidance and Personalized Workouts.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <section id="introduction">
+            
+<div class="container-fluid px-4 py-3 py-lg-5 my-5 text-center">
+	<div >
+		<div>
+
+			<h2 class="display-5 fw-bold text-red" style="letter-spacing: 10px;">Welcome to Selly Fitness</h2>
+
+		</div>
+	</div>
+	<div class="col-lg-9 mx-auto mb-4 pt-5">
+		<div>
+
+			<p class="lead ">Welcome to Selly Fitness, where we are passionate about helping you achieve your fitness goals and live a healthy, active lifestyle. We understand that embarking on a fitness journey can be daunting, which is why we are here to provide you with the support and guidance you need to succeed.</p>
+            <p class="lead">
+                Our team of experienced trainers are dedicated to helping you reach your full potential, whether you're looking to lose weight, build muscle, or simply improve your overall fitness. We believe that fitness should be enjoyable, which is why we offer a wide range of programs and classes that cater to all levels of fitness and experience.
+            </p>
+
+		</div>
+	</div>
+
+	<div class="d-grid gap-2 text-center d-lg-flex justify-content-center"> <a style="border-radius: 28px;"  class="btn btn-primary bg-red border-0 text-light btn-lg px-4 gap-3 col-12 col-lg-3" href="about-us.html" role="button">About Us <i class="fas fa-question"></i></a>
+		<a style="border-radius: 28px;" class="btn bg-red border-0 btn-lg px-4 text-light col-12 col-lg-3" href="contact.html" role="button">Contact Us <i class="fas fa-dumbbell"></i></a>
+	</div>
+</div>
+
+        </section>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            let navbar = document.getElementById("navbar")
+
+            window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            navbar.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+        }
+        }
+
+
+
+        </script>
+    </body>
+</html>
