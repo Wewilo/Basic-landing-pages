@@ -1,0 +1,222 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+
+$custom-theme-colors: (
+    "dark-blue" : rgb(20,39,78),
+    "dark-blue-v2" : rgb(2,38,70),
+    "dark-gray":#2b3036,
+    "turquoise" : rgb(64,224,208),
+    "white" : #FFF,
+    "gold" : #d6ac82
+);
+
+$btn-border-radius : 24px;
+$card-border-width: 0px;
+$dropdown-link-color:#d6ac82;
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+#topnav .nav-link{
+    color: #FFF !important;
+    font-size: 1.2rem !important;
+}
+
+
+.smooth{
+    transition: all 1s;
+}
+
+.justified{
+    text-align: justify;
+}
+
+.footer-icon {
+  font-size: 32px;
+}
+
+
+#hero-img{
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/hero.webp');
+    border-radius: 18px;             
+}
+
+.mt-big{
+    margin-top: 10rem;
+}
+
+.p-bg{
+    padding: 5vw;
+}
+
+
+.navbar .nav-link{
+    color: #000 !important;
+}
+
+.nav-link:hover{
+    opacity: 0.8;
+}
+
+#lawyer-name{
+    letter-spacing: 20px;
+    color: #d6ac82;
+}
+
+#hakkımda .nav-link{
+    padding:0.5rem 0px;
+}
+
+#hakkımda-background{
+    min-height: 75vh;
+background-size: cover;
+background-position: center;
+background-image: url('../img/hakkimda.webp');
+border-radius: 18px
+}
+
+
+#uzmanlik ul li{
+    list-style-image: url("../img/arrow-right-solid.svg");
+}
+
+#uzmanlik ul li a{
+    color: #d6ac82;
+}
+
+#alanlar .card-body{
+    background-color: #2b3036;
+}
+
+.devam:hover{
+    opacity: 0.8;
+    
+}
+
+.spacing{
+    margin-bottom: 5rem;
+}
+
+//testimonial
+
+#testimonials {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background: linear-gradient(to right, rgba(0, 0, 0) 75%, rgba(0, 0, 0, 0.566));
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
+}
+
+#team .card{
+    -webkit-box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+    -moz-box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+    box-shadow: 10px 7px 6px -1px rgba(173,161,173,1);
+
+}
+
+
+
+@media screen and (max-width:992px){
+    nav.navbar{
+        margin: 0px !important;
+        padding: 0px !important;
+        
+    }
+    #hero-img{
+        min-height: 50vh !important;
+        border-radius: 0px !important;
+    }
+
+    #hakkımda-background{
+        min-height: 50vh !important;
+        border-radius: 0px !important;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .spacing{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #margin-reset{
+        margin: 0px;
+    }
+    .p-bg{
+        padding: 0px;
+    }
+
+   
+}
+
+@media screen and (max-width:480px){
+    .navbar-brand{
+        margin-right: 0px !important;
+    }
+    .navbar-collapse .nav-item{
+        margin: 0px !important;
+    }
+
+    #nav-cont{
+        margin: 0px !important;
+        gap: 0px !important;
+        padding: 0px !important;
+    }
+
+    #hero-img{
+        min-height: 60vh !important;
+        border-radius: 0px;
+        margin-top: 1rem;
+    }
+
+
+    #hakkımda-background{
+        border-radius: 0px !important;
+        min-height: 60vh;
+    }
+
+    #lawyer-name{
+        white-space: nowrap;
+        letter-spacing: 6px;
+        font-size: 3rem;
+    }
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+
+    img{
+        max-height: 500px !important;
+    }
+
+
+    
+}
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,264 @@
+
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+html,body{
+    font-family: 'Dancing Script', cursive !important;
+    font-family: 'Lato', sans-serif !important;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.fm-ds{
+    font-family:'Dancing Script', cursive !important ;
+}
+
+.fm-lato{
+    font-family: 'Lato', sans-serif !important;
+}
+
+.navbar-brand{
+  font-size: 1.7rem !important;
+}
+
+$custom-theme-colors: (
+    "orange" :  #EA9934,
+    "black" : #000000,
+    "beige" : #E7D49E
+);
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+$navbar-dark-color:#FFF;
+$nav-link-color:#FFF;
+$nav-link-hover-color:#E7D49E;
+$navbar-dark-hover-color:#E7D49E;
+$nav-link-font-size : 1.3rem;
+
+.navbar-brand:hover{
+    color: #FFF !important;
+}
+
+
+
+
+//carousel
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+  }
+  .bg-1 {
+    background-image: url('../assets/carousel-1.webp');
+  }
+  .bg-2 {
+    background-image: url('../assets/carousel-2.webp');
+  }
+  .bg-3 {
+    background-image: url('../assets/carousel-3.webp');
+  }
+  .bg-4 {
+    background-image: url('../assets/carousel-4.webp');
+  }
+  .bg-5 {
+    background-image: url('../assets/carousel-5.webp');
+  }
+  .bg-6 {
+    background-image: url('../assets/carousel-6.webp');
+  }
+  .bg-7 {
+    background-image: url('../assets/carousel-7.webp');
+  }
+  .bg-8 {
+    background-image: url('../assets/carousel-8.webp');
+  }
+
+  .bg-1,
+  .bg-2,
+  .bg-3,
+  .bg-4,
+  .bg-5,
+  .bg-6,
+  .bg-7,
+  .bg-8{
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-1{
+    background-position: top 30% center;
+  }
+
+
+  .bg-2{
+    background-position: bottom 30% center;
+  }
+
+  .bg-3{
+    background-position: top 20% center;
+  }
+
+  .bg-4{
+    background-position: bottom center;
+  }
+
+  .bg-5{
+    background-position: bottom 20% center;
+  }
+
+  .bg-6{
+    background-position: bottom 20% center;
+  }
+
+  .bg-7{
+    background-position: bottom 20% center;
+  }
+
+  .bg-8{
+    background-position: bottom 20% center;
+  }
+
+  button img{
+    height: 70px !important;
+  }
+
+  .carousel-caption {
+    width: 60% !important;
+    display: grid;
+    align-content:center;
+    position: absolute !important;
+    top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+    z-index: 2;
+
+  }
+  .carousel-caption h5 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive !important;
+  }
+  .carousel-caption p {
+    line-height: 1.9;
+  }
+  
+  .carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.361);
+    z-index: 1;
+  }
+  .carousel-indicators {
+    margin-bottom: 3.5rem !important;
+    bottom: 65px;
+  }
+  .carousel-indicators button {
+    width: 100px !important;
+  }
+
+
+.social-links ul li a{
+  color: #978a66 !important;
+}
+
+
+.services-nav li{
+  color: #E7D49E;
+  list-style-type: disc !important;
+}
+
+.services-nav li a{
+  color:#E7D49E ;
+}
+
+#portfolio img{
+  height: 500px !important;
+  width: 100%;
+}
+
+#portfolio col{
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.portfolio-overlay::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-overlay li a{
+  transition: all 0.6s linear;
+  opacity: 0;
+}
+
+.portfolio-overlay:hover a{
+  opacity: 1;
+  color: #FFF !important;
+  border-radius: 18px;
+  border: 5px solid #FFF;
+  -webkit-box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+-moz-box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+box-shadow: 10px 10px 17px 8px rgba(212,185,185,1);
+}
+
+@media screen and (max-width:720px) {
+  .carousel-indicators{
+    display: none !important;
+  }
+  #portfolio div{
+    border: none !important;
+}
+.navbar-brand{
+  font-size: 1.3rem !important;
+}
+}
+
+@media screen and (max-width:992px){
+  .services-img img{
+    height: 60vh !important;
+    width: 100%
+  }
+}
+
+@media screen and (max-width:500px) {
+  .portfolio-overlay li a{
+    opacity: 1;
+  }
+  .carousel-caption{
+    width: 90% !important;
+  }
+}
+
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

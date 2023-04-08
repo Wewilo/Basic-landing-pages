@@ -1,0 +1,332 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+html,body{
+    font-family: 'Dancing Script', cursive !important;
+    font-family: 'Lato', sans-serif !important;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+
+.fm-ds{
+    font-family:'Dancing Script', cursive !important ;
+}
+
+.fm-lato{
+    font-family: 'Lato', sans-serif !important;
+}
+
+.navbar-brand{
+  font-size: 2rem !important;
+}
+
+
+$custom-theme-colors: (
+    "brown" : #867070,
+    "beige" : #8E8570
+
+);
+
+$navbar-dark-color:#FFF;
+$nav-link-color: #8E8570;
+$navbar-dark-hover-color:#EA9934;
+
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+
+body {
+    font-family: 'Lato', sans-serif !important;
+  }
+  .navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #002C3B;
+  }
+  
+  .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+  }
+  
+  /*  carousel      */
+  
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+  }
+  .bg-1 {
+    background-image: url('../assets/carousel-image-2.webp');
+  }
+  .bg-2 {
+    background-image: url('../assets/carousel-image-1.webp');
+  }
+  .bg-3 {
+    background-image: url('../assets/grid-photo-2.webp');
+  }
+
+  .bg-1,
+  .bg-2,
+  .bg-3{
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-1{
+    background-position: top 30% center;
+  }
+
+
+  .bg-2{
+    background-position: bottom 30% center;
+  }
+
+  .bg-3{
+    background-position: top 20% center;
+  }
+
+  .carousel-caption {
+    width: 60% !important;
+    display: grid;
+    align-content:center;
+    position: absolute !important;
+    top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+    z-index: 2;
+
+  }
+  .carousel-caption h5 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive !important;
+  }
+  .carousel-caption p {
+    line-height: 1.9;
+  }
+  
+  .carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.361);
+    z-index: 1;
+  }
+  .carousel-indicators {
+    margin-bottom: 6rem !important;
+    bottom: 65px;
+  }
+  .carousel-indicators button {
+    width: 100px !important;
+  }
+
+
+
+
+//my work carousel
+
+.my-work-carousel, .carousel-inner{
+    min-height: 600px;
+  }
+.my-work-carousel .carousel-item{
+    height: 600px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio .col{
+    padding: 0px !important;
+}
+
+
+//portfolio grid area
+
+
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+.social-links a:hover{
+    opacity: 0.7 ;
+    color: #8E8570;
+}
+
+
+.layer{
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-image: url('../assets/wave-haikei\ \(5\).svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.textAnimation{
+  animation-name: text-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes text-animation {
+  20%{
+          color: #f2ff00;
+  }
+  40%{
+          color: #ffcc00f1;
+  }
+  60%{
+          color: rgb(255, 166, 0);
+  }
+  80%{
+          color: rgb(255, 255, 0);
+  }
+  100%{
+          color: #FFF;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .grid-wrapper {
+      grid-template-columns: 1fr !important; 
+    }
+    .grid-wrapper .wide {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid-wrapper .tall {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .grid-wrapper .big {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .change-on-mobile{
+      min-height: 40vh !important;
+    }
+
+    
+
+  }
+
+
+
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse {
+      background: #fff;
+    }
+    .navbar-collapse .nav-item .nav-link {
+      color: #000;
+    }
+    .carousel-caption {
+      bottom: 350px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse .nav-item .nav-link {
+      color: #000;
+    }
+  
+    .carousel-caption {
+      bottom: 165px;
+    }
+    .carousel-caption a {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    .navbar-collapse {
+      background: #fff;
+    }
+
+    .container{
+      padding: 0px !important;
+      gap: 0px !important
+    }
+
+    .container img{
+      border-radius: 0px !important;
+    }
+
+    
+  }
+  
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
