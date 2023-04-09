@@ -1,0 +1,141 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>Contact | Norman Landscaping Services</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light pt-5">
+            <div class="container p-0 g-0">
+                <a class="navbar-brand" href="contact.html"><img src="./logo.svg" alt="logo" /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-dark text-light py-4 py-lg-6">
+            <div class="container mb-4 text-center">
+                <div class="row">
+                    <div class="row">
+                        <div>
+                            <h1 class="fw-bolder display-3"><strong>Get In Touch Today</strong></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form my-5 pt-5" id="contact-form">
+            <div class="container-fluid">
+                <div class="row">
+                    <form action="thanks.html" class="col-lg-6 g-3 needs-validation" novalidate>
+                        <div class="d-grid align-content-center order-last my-5 mt-lg-0">
+                            <div class="col-md-12">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" required />
+                                <div class="invalid-feedback">Please input your name</div>
+                            </div>
+                            <div class="">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" required />
+                                <div class="invalid-feedback">Please input your surname</div>
+                            </div>
+                            <div class="form-outline">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required />
+                                <div class="invalid-feedback">Please input a valid email address</div>
+                            </div>
+                            <div class="form-outline">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input type="tel" id="phone" class="form-control" required />
+                                <div class="invalid-feedback">Please input your phone number</div>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="message">Additional information</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                                <div class="invalid-feedback">Please input some message</div>
+                            </div>
+                            <div class="col-12">
+                                <button
+                                    class="btn btn-dark-green text-light w-100 fs-4"
+                                    type="submit"
+                                    style="border-radius: 28px"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-lg-6">
+                        <div>
+                            <div class="min-vh-50" lc-helper="gmap-embed">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9247.159773664247!2d-95.36813484756598!3d29.75533260970854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20Teksas%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1681043488807!5m2!1str!2str"
+                                    width="100%"
+                                    height="450"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            ;(function () {
+                "use strict"
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll(".needs-validation")
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add("was-validated")
+                        },
+                        false
+                    )
+                })
+            })()
+        </script>
+    </body>
+</html>

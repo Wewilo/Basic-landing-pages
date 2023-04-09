@@ -1,0 +1,23 @@
+{
+  "name": "norman-landscaping-services",
+  "version": "1.0.0",
+  "description": "website service of norman dundo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "landscaping",
+    "landscaping",
+    "design",
+    "garden",
+    "gardener",
+    "landscaping",
+    "services"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

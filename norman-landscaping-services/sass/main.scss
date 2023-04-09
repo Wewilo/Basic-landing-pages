@@ -1,0 +1,244 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+$custom-theme-colors: (
+    "black" : #000000,
+    "dark-green" : #385541,
+    "light-green" : #477c58
+);
+
+
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+$navbar-light-color:#000;
+$nav-link-color:#385541;
+$nav-link-font-size : 1.3rem;
+
+
+header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.navbar ul li a:hover::after{
+    display: block;
+    content: " ";
+    width: auto;
+    background-color: #385541;
+    height: 3px;
+}
+
+
+
+
+.carousel-item {
+    height: 70vh;
+    position: relative;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption{
+    position: absolute !important;
+    width: 70% !important;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+}
+
+.layer1{
+    background-image: url("../wave.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer2{
+    background-image: url("../wave2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer3{
+    background-image: url("../wave3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.services-img{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    height:400px ; 
+}
+
+.content ul li a:hover{
+    color: #385541 !important;
+}
+
+.content ul li a{
+    padding-left: 0px !important; 
+}
+
+.content ul li{
+    list-style: none;
+}
+
+
+.content ul li {
+    list-style: none;
+  }
+  .content ul li  a{
+    display: inline-block !important;
+    color: #FFF !important;
+  }
+  .content ul li::before {
+    content: '' ;
+    display: inline-block ;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    background-image: url("../checkmark.svg") !important;
+    vertical-align: middle;
+  }
+
+
+
+.about-us{
+    background: linear-gradient(to right, rgba(56, 85, 65, 0.5), #477c58d8), 
+            url('../plant.webp') no-repeat center center fixed;
+background-size: cover;
+}
+
+
+
+.text-background {
+    background: url('../our-mission.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.project{
+    transition: 1s all;
+}
+
+.projects .project li{
+    transition: 1s all;
+}
+
+.projects .project:hover >  li{
+    opacity: 1 !important;
+    z-index: 3 !important;
+}
+
+.projects .project:hover::after{
+    content : " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.531);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.projects .project:hover >  li::after{
+    display: block;
+    content: " ";
+    width: auto;
+    background-color: #FFF;
+    height: 3px;
+}
+
+.location {
+    z-index:4;
+    position: relative;
+}
+
+
+@media screen and (max-width:992px){
+    .object-fit-mobile{
+        object-fit: cover;
+        height: 40vh;
+    }
+
+    .about-us-img img{
+        height: 50vh !important;
+        width: 100%;
+        object-position: top;
+    }
+
+    .change-on-mobile{
+        height: 50vh !important ;
+    }
+
+    .navbar-brand img{
+        width: 300px;
+    }
+    .text-on-medium ul li a,.text-on-medium > h3{
+        color: gray !important;
+    }
+}
+
+@media screen and (max-width:568px)   {
+    .navbar-brand img{
+        width: 300px;
+    }
+    .carousel-caption{
+        width: 85% !important;
+    }
+
+    .services-img{
+        height: 370px !important;
+    }
+
+    .navbar ul li a:hover::after{
+        display: block;
+        content: " ";
+        width: 0 !important;
+        background-color: #385541;
+    }
+
+  
+}
+
+@media screen and (max-width:400px) {
+    .navbar-brand img{
+        width: 250px;
+    }
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
